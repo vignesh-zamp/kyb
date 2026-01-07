@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { PartyPopper, Mail, Check, Send, Loader2, Paperclip } from "lucide-react";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 interface SuccessScreenProps {
   email: string;
   referenceNumber: string;
@@ -41,14 +43,14 @@ export function SuccessScreen({ email, referenceNumber, contextData, stepInfo, z
     const fetchData = async () => {
       try {
         // Fetch Messages
-        const msgRes = await fetch(`http://localhost:8000/zamp/messages/${zampProcessId}`);
+        const msgRes = await fetch(`${API_URL}/zamp/messages/${zampProcessId}`);
         if (msgRes.ok) {
           const data = await msgRes.json();
           setMessages(data.messages || []);
         }
 
         // Fetch Status
-        const statusRes = await fetch(`http://localhost:8000/zamp/status/${zampProcessId}`);
+        const statusRes = await fetch(`${API_URL}/zamp/status/${zampProcessId}`);
         if (statusRes.ok) {
           const data = await statusRes.json();
           setProcessStatus(data.status);
@@ -84,7 +86,7 @@ export function SuccessScreen({ email, referenceNumber, contextData, stepInfo, z
     if (!contentToSend.trim() || !zampProcessId) return;
     setSending(true);
     try {
-      await fetch('http://localhost:8000/zamp/message', {
+      await fetch(`${API_URL}/zamp/message`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -110,7 +112,7 @@ export function SuccessScreen({ email, referenceNumber, contextData, stepInfo, z
       const formData = new FormData();
       formData.append("file", file);
 
-      const res = await fetch("http://localhost:8000/zamp/upload", {
+      const res = await fetch(`${API_URL}/zamp/upload`, {
         method: "POST",
         body: formData,
       });

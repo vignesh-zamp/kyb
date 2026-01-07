@@ -62,7 +62,8 @@ export function HelpChat({ contextData, stepInfo = "Onboarding Process", onToggl
         setIsLoading(true);
 
         try {
-            const response = await fetch("http://localhost:8000/chat/help", {
+            const API_URL = import.meta.env.VITE_API_URL;
+            const response = await fetch(`${API_URL}/chat/help`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({

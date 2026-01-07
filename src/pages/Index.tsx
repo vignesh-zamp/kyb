@@ -49,7 +49,7 @@ import { fetchLeiDetails } from "@/utils/gleifApi";
 import { HelpChat } from "@/components/chat/screens/HelpChat";
 
 // --- Zamp Integration Helpers ---
-const ZAMP_API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const ZAMP_API_URL = import.meta.env.VITE_API_URL; // Use configured VITE_API_URL
 
 const initZampProcess = async () => {
   try {
@@ -592,7 +592,7 @@ const Index = () => {
 
         // 1. Validate Name Match
         try {
-          const nameMatchRes = await fetch("http://localhost:8000/match-names", {
+          const nameMatchRes = await fetch(`${ZAMP_API_URL}/match-names`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -870,7 +870,7 @@ const Index = () => {
     setIsTyping(true);
     addAssistantMessage(`Verifying website: ${url}...`);
     try {
-      const response = await fetch("http://localhost:8000/verify-website", {
+      const response = await fetch(`${ZAMP_API_URL}/verify-website`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
