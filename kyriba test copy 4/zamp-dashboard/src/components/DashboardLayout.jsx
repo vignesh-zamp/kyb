@@ -73,7 +73,7 @@ const DashboardLayout = () => {
                                     `flex items-center px-2.5 py-1.5 text-xs ${isActive ? 'bg-gray-50 text-gray-900 font-medium' : 'text-gray-600 hover:bg-gray-50'}`
                                 }
                             >
-                                <img src="/random.svg" alt="process icon" className="w-6.5 h-6.5 mr-2.5" />
+                                <img src="/random.svg" alt="process icon" className="w-5 h-5 mr-2.5" />
                                 Client Onboarding
                             </NavLink>
                         </div>
