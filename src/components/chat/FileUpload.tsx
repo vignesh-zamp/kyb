@@ -40,7 +40,7 @@ export const FileUpload = ({
   }
 
   if (isHelpOpen) {
-    return <HelpChat isOpen={true} onToggle={() => setIsHelpOpen(false)} contextData={contextData} stepInfo={stepInfo} />;
+    return <HelpChat isOpen={true} onToggle={setIsHelpOpen} contextData={contextData} stepInfo={stepInfo} />;
   }
 
   const handleDragOver = useCallback((e: React.DragEvent) => {

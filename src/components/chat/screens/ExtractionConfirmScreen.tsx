@@ -24,7 +24,7 @@ export function ExtractionConfirmScreen({ fields: initialFields, onConfirm, cont
   const [isHelpOpen, setIsHelpOpen] = useState(false);
 
   if (isHelpOpen) {
-    return <HelpChat isOpen={true} onToggle={() => setIsHelpOpen(false)} contextData={contextData} stepInfo={stepInfo} />;
+    return <HelpChat isOpen={true} onToggle={setIsHelpOpen} contextData={contextData} stepInfo={stepInfo} />;
   }
 
   const handleFieldChange = (key: string, value: string) => {
