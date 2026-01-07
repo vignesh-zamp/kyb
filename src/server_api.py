@@ -667,6 +667,36 @@ INSTRUCTIONS:
         print(f"Error in help chat: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+class KnowledgeBaseRequest(BaseModel):
+    userMessage: str
+    knowledgeBaseContent: str
+    conversationHistory: list = []
+
+@app.post("/chat/knowledge-base")
+async def chat_knowledge_base(request: KnowledgeBaseRequest):
+    try:
+        model = genai.GenerativeModel("gemini-2.5-flash-lite")
+
+        # Format history string
+        history_text = "\n".join([f"{msg['role']}: {msg['content']}" for msg in request.conversationHistory])
+
+        context = f"""You are a helpful assistant for AEPC Reporting. Answer questions based ONLY on the following knowledge base content. If the answer is not in the knowledge base, say "I don't have information about that in the knowledge base."
+
+Knowledge Base:
+{request.knowledgeBaseContent}
+
+Previous conversation:
+{history_text}
+"""
+        prompt = f"{context}\n\nUser: {request.userMessage}\nAssistant:"
+
+        response = model.generate_content(prompt)
+        return {"response": response.text}
+
+    except Exception as e:
+        print(f"Error in knowledge base chat: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
+
 # ...
 
 class MessageRequest(BaseModel):
