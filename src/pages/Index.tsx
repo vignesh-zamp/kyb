@@ -204,7 +204,7 @@ const SCREEN_MESSAGES: Record<ScreenId, { content: string; helperText?: string }
   "1.3": { content: "Great! Now please enter your mobile number." },
   "1.4": { content: "We've sent a verification code to your mobile. Please enter it below." },
   "1.4A": { content: "What is your full legal name?" },
-  "1.6": { content: "Let's verify your identity. Please upload a clear photo of your Government ID (Driver's License or Passport)." },
+  "1.6": { content: "Let's verify your identity. Please upload a clear photo of your Government ID (SSN Card, Driver's License or Passport)." },
   "1.7": { content: "We extracted the following information from your ID. Please confirm it's correct:" },
   "2.1": { content: "Let's verify your business. Please enter your Legal Entity Identifier (LEI) number. Don't have it? You can upload your registration document instead." },
   "2.2": { content: "We found the following business details. Please confirm:" },
