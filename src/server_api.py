@@ -61,8 +61,13 @@ app = FastAPI()
 # Enable CORS for frontend integration
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://localhost:5173", "http://localhost:8080"], # Localhost
-    allow_origin_regex="https://.*\.vercel\.app", # Allow all Vercel deployments
+    allow_origins=[
+        "http://localhost:3000", 
+        "http://localhost:5173", 
+        "http://localhost:8080",
+        "https://kyb-iota.vercel.app",
+        "https://kyb-production-fa25.up.railway.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
