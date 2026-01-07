@@ -1,11 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Filter, Check, Loader2 } from 'lucide-react';
-import processesData from '../data/processes.json';
-
 const ProcessList = () => {
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState('Done');
+    const [processesData, setProcessesData] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+
+    const API_URL = import.meta.env.VITE_API_URL;
+
+    useEffect(() => {
+        const fetchProcesses = async () => {
+            try {
+                const response = await fetch(`${API_URL}/zamp/processes`);
+                if (response.ok) {
+                    const data = await response.json();
+                    setProcessesData(data);
+                }
+            } catch (error) {
+                console.error("Failed to fetch processes:", error);
+            } finally {
+                setIsLoading(false);
+            }
+        };
+        fetchProcesses();
+
+        // Optional: Poll every 5 seconds to keep list fresh
+        const interval = setInterval(fetchProcesses, 5000);
+        return () => clearInterval(interval);
+    }, []);
 
     // Filter processes based on active tab
     const getProcessesByStatus = (status) => {
