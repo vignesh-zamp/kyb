@@ -311,6 +311,30 @@ async def verify_website(request: WebsiteRequest):
         # Run extraction
         data = await extract_website_data(request.url)
         
+        # Security Check
+        model = genai.GenerativeModel("gemini-2.5-flash-lite")
+        security_prompt = f"""
+        Analyze the content of this website: {request.url}
+        Based on the extracted text: {json.dumps(data)}
+        
+        Check if this website is involved in any of the following restricted activities:
+        1. Betting / Gambling (e.g. bet365)
+        2. Pornography / Adult Content
+        3. Money Laundering
+        4. Dark Web / Illegal Marketplaces
+        5. Any other illegal activity
+        
+        Return JSON: {{ "isSafe": boolean, "reason": "string" }}
+        If unsafe, set isSafe to false and explain why.
+        """
+        
+        sec_res = model.generate_content(security_prompt)
+        sec_data = json.loads(sec_res.text.replace('```json', '').replace('```', '').strip())
+        
+        if not sec_data.get("isSafe", True):
+             return {"error": "Restricted Activity Detected", "details": sec_data.get("reason", "Policy Violation")}
+
+        
         # Handle Video
         video_path = data.get("video_path")
         public_video_path = None

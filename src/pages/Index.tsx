@@ -179,15 +179,17 @@ const AddressInputWrapper = ({
   );
 };
 
-const STEPS: Step[] = [
-  { id: 1, label: "Identity", description: "Verification" },
-  { id: 2, label: "Eligibility", description: "Business type" },
-  { id: 3, label: "Documents", description: "Upload & verify" },
-  { id: 4, label: "Authorization", description: "Documents" },
-  { id: 5, label: "Business", description: "Operations" },
-  { id: 6, label: "Financial", description: "Profile" },
-  { id: 7, label: "Review", description: "Submit" },
+const STEPS = [
+  { id: 1, title: "Identity", icon: User },
+  { id: 2, title: "Eligibility", icon: ShieldCheck },
+  { id: 3, title: "Entity Docs", icon: FileText },
+  { id: 4, title: "Authorization", icon: ShieldCheck },
+  { id: 5, title: "Operations", icon: Globe },
+  { id: 6, title: "Financials", icon: Briefcase },
+  { id: 7, title: "Review", icon: CheckCircle2 }
 ];
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 const WELCOME_MESSAGE = "Welcome to our Intelligent Onboarding platform powered by Pace.\n\nI'm here to help you open your business bank account so you can get your business banking up and running in no time!";
 
@@ -1242,6 +1244,46 @@ const Index = () => {
     }
   };
 
+  const handleWebsiteSubmit = async (url: string) => {
+    setIsTyping(true);
+    addUserMessage(`Checking website: ${url}...`);
+
+    try {
+      const response = await fetch(`${API_URL}/verify-website`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ url })
+      });
+
+      const result = await response.json();
+
+      if (result.error) {
+        setIsTyping(false);
+        addAssistantMessage(`⚠️ Security Alert: ${result.error}`);
+        addAssistantMessage(`Reason: ${result.details}`);
+        return; // Stop progress
+      }
+
+      // Success
+      updateData({
+        websiteUrl: url,
+        extractedWebsiteData: result
+      });
+
+      addAssistantMessage("Website verified successfully.");
+      setIsTyping(false);
+      goToNextScreen();
+
+    } catch (error) {
+      console.error("Website check failed", error);
+      setIsTyping(false);
+      // Allow proceed on technical error? Or block? 
+      // User asked to block on illegal, so maybe strict?
+      // For now, let's just warn but maybe allow manual override or just show error.
+      addAssistantMessage("Unable to verify website automatically. Please ensure the URL is accessible.");
+    }
+  };
+
   // Helper for Zamp Logging
   const logBusinessVerificationComplete = async (finalData: any) => {
     if (!zampProcessId) return;
@@ -1430,7 +1472,7 @@ const Index = () => {
 
         // Step 5: Operations
         case "5.1": return <BoxSelectionScreen options={[{ id: "yes", label: "Yes", icon: "check" }, { id: "no", label: "No", icon: "x" }]} onSelect={(v) => { const choice = v === "yes"; updateData({ hasOnlinePresence: choice }); setTimeout(() => goToNextScreen({ hasOnlinePresence: choice }), 300); }} contextData={data} stepInfo={stepInfo} />;
-        case "5.2": return <TextInputScreen placeholder="e.g. www.example.com" onSubmit={(v) => { updateData({ websiteUrl: v }); setTimeout(goToNextScreen, 300); }} contextData={data} stepInfo={stepInfo} />;
+        case "5.2": return <TextInputScreen placeholder="e.g. www.example.com" onSubmit={(v) => handleWebsiteSubmit(v)} contextData={data} stepInfo={stepInfo} />;
         case "5.3": return <BoxSelectionScreen options={[{ id: "yes", label: "Yes", icon: "check" }, { id: "no", label: "No", icon: "x" }]} onSelect={(v) => { const choice = v === "yes"; updateData({ hasInternationalOps: choice }); setTimeout(() => goToNextScreen({ hasInternationalOps: choice }), 300); }} contextData={data} stepInfo={stepInfo} />;
         case "5.4": return <CountrySelectScreen onSubmit={handleCountrySelect} contextData={data} stepInfo={stepInfo} />;
         case "5.5": return <BoxSelectionScreen options={[{ id: "yes", label: "Yes", icon: "check" }, { id: "no", label: "No", icon: "x" }]} onSelect={(v) => { updateData({ hasPhysicalPresenceAbroad: v === "yes" }); setTimeout(goToNextScreen, 300); }} contextData={data} stepInfo={stepInfo} />;
