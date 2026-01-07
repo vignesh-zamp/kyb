@@ -65,7 +65,7 @@ const ReviewActions = ({ processId, messages, refresh, rejectionReasons = [], on
 
         const defaultEmail = `Dear Applicant,
 
-Thank you for your interest in opening an account with Wio Bank.
+Thank you for your interest in opening an account with Bank of America.
 
 After careful review of your application and supporting documents, we regret to inform you that we are unable to proceed with your account opening request at this time.
 
@@ -77,7 +77,7 @@ If you believe this decision was made in error or if you have additional documen
 We appreciate your understanding.
 
 Best regards,
-Wio Bank Onboarding Team`;
+Bank of America Onboarding Team`;
         setRejectionEmail(defaultEmail);
         setShowRejectModal(true);
     };
@@ -595,7 +595,7 @@ const ProcessDetails = () => {
                             <div className="space-y-2.5 text-xs">
                                 <div className="flex justify-between">
                                     <span className="text-gray-500">Application ID</span>
-                                    <span className="text-gray-900 font-medium">WIO-{id}</span>
+                                    <span className="text-gray-900 font-medium">BOA-{id}</span>
                                 </div>
                                 <div className="flex justify-between">
                                     <span className="text-gray-500">Customer Name</span>

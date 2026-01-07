@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "completed",
                     "type": "success",
                     "time": "12:11 PM"
@@ -156,7 +156,7 @@
                             "data": {
                                 "grantedBy": "Badar Tariq",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "To act on behalf of Trafco DMCC for matters relating to Wio Bank PJSC, including communication, onboarding, document provision, signing forms, and managing banking facilities.",
+                                "scope": "To act on behalf of Trafco DMCC for matters relating to Bank of America PJSC, including communication, onboarding, document provision, signing forms, and managing banking facilities.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -409,7 +409,7 @@
                     "data": {
                         "grantedBy": "Badar Tariq",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "To act on behalf of Trafco DMCC for matters relating to Wio Bank PJSC, including communication, onboarding, document provision, signing forms, and managing banking facilities.",
+                        "scope": "To act on behalf of Trafco DMCC for matters relating to Bank of America PJSC, including communication, onboarding, document provision, signing forms, and managing banking facilities.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

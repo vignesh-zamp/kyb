@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "completed",
                     "type": "success",
                     "time": "10:02 AM"
@@ -152,7 +152,7 @@
                             "data": {
                                 "grantedBy": "Badar Tariq",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "Act on behalf of Trafco DMCC for purposes of communicating with Wio Bank PJSC, completing onboarding/verification/compliance procedures, providing corporate documents, and signing/submitting forms/declarations/confirmations required by Wio Bank, and representing the company in all matters relating to opening and maintaining banking facilities with Wio Bank.",
+                                "scope": "Act on behalf of Trafco DMCC for purposes of communicating with Bank of America PJSC, completing onboarding/verification/compliance procedures, providing corporate documents, and signing/submitting forms/declarations/confirmations required by Bank of America, and representing the company in all matters relating to opening and maintaining banking facilities with Bank of America.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -585,7 +585,7 @@
                     "data": {
                         "grantedBy": "Badar Tariq",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "Act on behalf of Trafco DMCC for purposes of communicating with Wio Bank PJSC, completing onboarding/verification/compliance procedures, providing corporate documents, and signing/submitting forms/declarations/confirmations required by Wio Bank, and representing the company in all matters relating to opening and maintaining banking facilities with Wio Bank.",
+                        "scope": "Act on behalf of Trafco DMCC for purposes of communicating with Bank of America PJSC, completing onboarding/verification/compliance procedures, providing corporate documents, and signing/submitting forms/declarations/confirmations required by Bank of America, and representing the company in all matters relating to opening and maintaining banking facilities with Bank of America.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "processing",
                     "type": "success",
                     "time": "05:30 PM"
@@ -164,7 +164,7 @@
                             "data": {
                                 "grantedBy": "Ahmed Mohammed Al Rashid",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "Representing the Company in all matters relating to opening and maintaining banking facilities with Wio Bank, communicating with Wio Bank PJSC, completing onboarding, verification, and compliance procedures, and providing corporate documents.",
+                                "scope": "Representing the Company in all matters relating to opening and maintaining banking facilities with Bank of America, communicating with Bank of America PJSC, completing onboarding, verification, and compliance procedures, and providing corporate documents.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -414,7 +414,7 @@
                     "data": {
                         "grantedBy": "Ahmed Mohammed Al Rashid",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "Representing the Company in all matters relating to opening and maintaining banking facilities with Wio Bank, communicating with Wio Bank PJSC, completing onboarding, verification, and compliance procedures, and providing corporate documents.",
+                        "scope": "Representing the Company in all matters relating to opening and maintaining banking facilities with Bank of America, communicating with Bank of America PJSC, completing onboarding, verification, and compliance procedures, and providing corporate documents.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

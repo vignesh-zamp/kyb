@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "completed",
                     "type": "success",
                     "time": "09:44 AM"
@@ -164,7 +164,7 @@
                             "data": {
                                 "grantedBy": "Badar Tariq",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "To act on behalf of Trafco DMCC for communicating with Wio Bank, completing onboarding, providing corporate documents, signing and submitting forms, and representing the Company in opening and maintaining banking facilities.",
+                                "scope": "To act on behalf of Trafco DMCC for communicating with Bank of America, completing onboarding, providing corporate documents, signing and submitting forms, and representing the Company in opening and maintaining banking facilities.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -440,7 +440,7 @@
                     "data": {
                         "grantedBy": "Badar Tariq",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "To act on behalf of Trafco DMCC for communicating with Wio Bank, completing onboarding, providing corporate documents, signing and submitting forms, and representing the Company in opening and maintaining banking facilities.",
+                        "scope": "To act on behalf of Trafco DMCC for communicating with Bank of America, completing onboarding, providing corporate documents, signing and submitting forms, and representing the Company in opening and maintaining banking facilities.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "completed",
                     "type": "success",
                     "time": "11:48 AM"
@@ -164,7 +164,7 @@
                             "data": {
                                 "grantedBy": "Badar Tariq",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "To act on behalf of Trafco DMCC for purposes including communicating with Wio Bank PJSC, completing onboarding, providing corporate documents, and signing/submitting forms and declarations required by Wio Bank.",
+                                "scope": "To act on behalf of Trafco DMCC for purposes including communicating with Bank of America PJSC, completing onboarding, providing corporate documents, and signing/submitting forms and declarations required by Bank of America.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -458,7 +458,7 @@
                     "data": {
                         "grantedBy": "Badar Tariq",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "To act on behalf of Trafco DMCC for purposes including communicating with Wio Bank PJSC, completing onboarding, providing corporate documents, and signing/submitting forms and declarations required by Wio Bank.",
+                        "scope": "To act on behalf of Trafco DMCC for purposes including communicating with Bank of America PJSC, completing onboarding, providing corporate documents, and signing/submitting forms and declarations required by Bank of America.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

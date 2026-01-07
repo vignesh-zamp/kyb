@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "completed",
                     "type": "success",
                     "time": "12:06 PM"
@@ -156,7 +156,7 @@
                             "data": {
                                 "grantedBy": "Badar Tariq",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Wio Bank, including communicating with Wio Bank, completing onboarding and compliance procedures, providing corporate documents, and signing/submitting required forms.",
+                                "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Bank of America, including communicating with Bank of America, completing onboarding and compliance procedures, providing corporate documents, and signing/submitting required forms.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -255,7 +255,7 @@
                     "data": {
                         "grantedBy": "Badar Tariq",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Wio Bank, including communicating with Wio Bank, completing onboarding and compliance procedures, providing corporate documents, and signing/submitting required forms.",
+                        "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Bank of America, including communicating with Bank of America, completing onboarding and compliance procedures, providing corporate documents, and signing/submitting required forms.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

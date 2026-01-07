@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "completed",
                     "type": "success",
                     "time": "11:48 AM"
@@ -156,7 +156,7 @@
                             "data": {
                                 "grantedBy": "Badar Tariq",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "To act on behalf of Trafco DMCC for communicating with Wio Bank PJSC, completing onboarding and verification procedures, providing corporate documents, and signing and submitting forms and declarations required by Wio Bank, including matters relating to opening and maintaining banking facilities.",
+                                "scope": "To act on behalf of Trafco DMCC for communicating with Bank of America PJSC, completing onboarding and verification procedures, providing corporate documents, and signing and submitting forms and declarations required by Bank of America, including matters relating to opening and maintaining banking facilities.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -425,7 +425,7 @@
                     "data": {
                         "grantedBy": "Badar Tariq",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "To act on behalf of Trafco DMCC for communicating with Wio Bank PJSC, completing onboarding and verification procedures, providing corporate documents, and signing and submitting forms and declarations required by Wio Bank, including matters relating to opening and maintaining banking facilities.",
+                        "scope": "To act on behalf of Trafco DMCC for communicating with Bank of America PJSC, completing onboarding and verification procedures, providing corporate documents, and signing and submitting forms and declarations required by Bank of America, including matters relating to opening and maintaining banking facilities.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

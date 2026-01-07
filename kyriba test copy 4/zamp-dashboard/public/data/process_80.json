@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "completed",
                     "type": "success",
                     "time": "01:39 PM"
@@ -156,7 +156,7 @@
                             "data": {
                                 "grantedBy": "Badar Tariq",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Wio Bank PJSC, including communication, onboarding, verification, compliance procedures, providing corporate documents, and signing required forms.",
+                                "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Bank of America PJSC, including communication, onboarding, verification, compliance procedures, providing corporate documents, and signing required forms.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -287,7 +287,7 @@
                     "data": {
                         "grantedBy": "Badar Tariq",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Wio Bank PJSC, including communication, onboarding, verification, compliance procedures, providing corporate documents, and signing required forms.",
+                        "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Bank of America PJSC, including communication, onboarding, verification, compliance procedures, providing corporate documents, and signing required forms.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

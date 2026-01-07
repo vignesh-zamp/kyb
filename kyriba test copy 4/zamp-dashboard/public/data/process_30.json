@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "processing",
                     "type": "success",
                     "time": "06:52 PM"
@@ -164,7 +164,7 @@
                             "data": {
                                 "grantedBy": "Ahmed Mohammed Al Rashid",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "Communicate with Wio Bank PJSC, complete onboarding, verification, compliance, provide corporate documents, and represent the Company in banking matters.",
+                                "scope": "Communicate with Bank of America PJSC, complete onboarding, verification, compliance, provide corporate documents, and represent the Company in banking matters.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -322,7 +322,7 @@
                     "data": {
                         "grantedBy": "Ahmed Mohammed Al Rashid",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "Communicate with Wio Bank PJSC, complete onboarding, verification, compliance, provide corporate documents, and represent the Company in banking matters.",
+                        "scope": "Communicate with Bank of America PJSC, complete onboarding, verification, compliance, provide corporate documents, and represent the Company in banking matters.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

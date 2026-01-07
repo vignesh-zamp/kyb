@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "processing",
                     "type": "success",
                     "time": "07:19 AM"
@@ -164,7 +164,7 @@
                             "data": {
                                 "grantedBy": "Badar Tariq",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "To act on behalf of Trafco DMCC for matters relating to communicating with, onboarding with, providing documentation to, and signing forms for Wio Bank PJSC, including opening and maintaining banking facilities.",
+                                "scope": "To act on behalf of Trafco DMCC for matters relating to communicating with, onboarding with, providing documentation to, and signing forms for Bank of America PJSC, including opening and maintaining banking facilities.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -402,7 +402,7 @@
                     "data": {
                         "grantedBy": "Badar Tariq",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "To act on behalf of Trafco DMCC for matters relating to communicating with, onboarding with, providing documentation to, and signing forms for Wio Bank PJSC, including opening and maintaining banking facilities.",
+                        "scope": "To act on behalf of Trafco DMCC for matters relating to communicating with, onboarding with, providing documentation to, and signing forms for Bank of America PJSC, including opening and maintaining banking facilities.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

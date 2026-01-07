@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "processing",
                     "type": "success",
                     "time": "08:59 PM"
@@ -164,7 +164,7 @@
                             "data": {
                                 "grantedBy": "Ahmed Mohammed Al Rashid",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "Acting on behalf of Al Thuraya Advanced Electronics Trading LLC for communicating with Wio Bank PJSC, completing onboarding and compliance procedures, providing corporate documents, and representing the company in opening and maintaining banking facilities.",
+                                "scope": "Acting on behalf of Al Thuraya Advanced Electronics Trading LLC for communicating with Bank of America PJSC, completing onboarding and compliance procedures, providing corporate documents, and representing the company in opening and maintaining banking facilities.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -322,7 +322,7 @@
                     "data": {
                         "grantedBy": "Ahmed Mohammed Al Rashid",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "Acting on behalf of Al Thuraya Advanced Electronics Trading LLC for communicating with Wio Bank PJSC, completing onboarding and compliance procedures, providing corporate documents, and representing the company in opening and maintaining banking facilities.",
+                        "scope": "Acting on behalf of Al Thuraya Advanced Electronics Trading LLC for communicating with Bank of America PJSC, completing onboarding and compliance procedures, providing corporate documents, and representing the company in opening and maintaining banking facilities.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

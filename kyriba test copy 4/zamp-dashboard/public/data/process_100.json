@@ -16,7 +16,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "processing",
                     "type": "success",
                     "time": "08:34 AM"
@@ -171,7 +171,7 @@
                             "data": {
                                 "grantedBy": "Badar Tariq",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Wio Bank, including communication, onboarding, verification, compliance procedures, providing corporate documents, and signing forms.",
+                                "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Bank of America, including communication, onboarding, verification, compliance procedures, providing corporate documents, and signing forms.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -404,7 +404,7 @@
                     "data": {
                         "grantedBy": "Badar Tariq",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Wio Bank, including communication, onboarding, verification, compliance procedures, providing corporate documents, and signing forms.",
+                        "scope": "Representing Trafco DMCC in all matters relating to opening and maintaining banking facilities with Bank of America, including communication, onboarding, verification, compliance procedures, providing corporate documents, and signing forms.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

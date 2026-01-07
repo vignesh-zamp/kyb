@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "processing",
                     "type": "success",
                     "time": "06:47 PM"
@@ -164,7 +164,7 @@
                             "data": {
                                 "grantedBy": "Ahmed Mohammed Al Rashid",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "Act on behalf of Al Thuraya Advanced Electronics Trading LLC for communicating with Wio Bank PJSC, completing onboarding and verification procedures, providing corporate documents, signing forms, and representing the Company in opening and maintaining banking facilities.",
+                                "scope": "Act on behalf of Al Thuraya Advanced Electronics Trading LLC for communicating with Bank of America PJSC, completing onboarding and verification procedures, providing corporate documents, signing forms, and representing the Company in opening and maintaining banking facilities.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false
@@ -408,7 +408,7 @@
                     "data": {
                         "grantedBy": "Ahmed Mohammed Al Rashid",
                         "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                        "scope": "Act on behalf of Al Thuraya Advanced Electronics Trading LLC for communicating with Wio Bank PJSC, completing onboarding and verification procedures, providing corporate documents, signing forms, and representing the Company in opening and maintaining banking facilities.",
+                        "scope": "Act on behalf of Al Thuraya Advanced Electronics Trading LLC for communicating with Bank of America PJSC, completing onboarding and verification procedures, providing corporate documents, signing forms, and representing the Company in opening and maintaining banking facilities.",
                         "dateIssued": null,
                         "expiryDate": null,
                         "notarized": false

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "title": "Wio Onboarding Application started",
+            "title": "BOA Onboarding Application started",
             "status": "processing",
             "type": "success",
             "id": "log_0_1765257951.561612",
@@ -16,7 +16,7 @@
         }
     ],
     "keyDetails": {
-        "processName": "Wio Onboarding Application",
+        "processName": "BOA Onboarding Application",
         "team": "Wio Applicant",
         "processingDate": "2025-12-09",
         "status": "processing"

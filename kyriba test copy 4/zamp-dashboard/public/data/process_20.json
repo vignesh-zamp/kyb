@@ -9,7 +9,7 @@
             "title": "Activity Logs",
             "items": [
                 {
-                    "title": "Wio Onboarding Application started",
+                    "title": "BOA Onboarding Application started",
                     "status": "processing",
                     "type": "success",
                     "time": "11:33 AM"
@@ -164,7 +164,7 @@
                             "data": {
                                 "grantedBy": "Ahmed Mohammed Al Rashid",
                                 "grantedTo": "Zeeshan Yasin Muhammad Yasin",
-                                "scope": "Representing Al Thuraya Advanced Electronics Trading LLC for banking purposes with Wio Bank PJSC, including communication, onboarding, verification, compliance procedures, providing corporate documents, and opening/maintaining banking facilities.",
+                                "scope": "Representing Al Thuraya Advanced Electronics Trading LLC for banking purposes with Bank of America PJSC, including communication, onboarding, verification, compliance procedures, providing corporate documents, and opening/maintaining banking facilities.",
                                 "dateIssued": null,
                                 "expiryDate": null,
                                 "notarized": false

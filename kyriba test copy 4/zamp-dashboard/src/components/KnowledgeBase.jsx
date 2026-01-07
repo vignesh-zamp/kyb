@@ -146,7 +146,7 @@ const KnowledgeBase = () => {
                     <div className="h-12 border-b border-gray-200 flex items-center justify-between px-6 bg-white">
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                            <span className="text-sm text-gray-600">Client Onboarding</span>
+                            <span className="text-sm text-gray-600">Business Onboarding</span>
                         </div>
                         <button
                             onClick={clearChatHistory}
@@ -232,7 +232,7 @@ const KnowledgeBase = () => {
                         <h1 className="text-2xl font-semibold text-gray-900 mb-8 flex items-center justify-center gap-3">
                             Ask
                             <img src="/logooo.svg" alt="Pace Logo" className="h-8 w-8" />
-                            Pace anything about Client Onboarding
+                            Pace anything about Business Onboarding
                         </h1>
 
                         {/* Chat Input */}
@@ -280,7 +280,7 @@ const KnowledgeBase = () => {
                             <div className="absolute bottom-10 left-1/2 w-36 h-36 bg-green-200 rounded-full blur-3xl"></div>
                         </div>
                         <div className="relative px-12 pt-16">
-                            <h1 className="text-4xl font-bold text-gray-900">Client Onboarding</h1>
+                            <h1 className="text-4xl font-bold text-gray-900">Business Onboarding</h1>
                         </div>
                     </div>
 
