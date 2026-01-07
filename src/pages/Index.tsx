@@ -199,7 +199,7 @@ const SCREEN_MESSAGES: Record<ScreenId, { content: string; helperText?: string }
   "2.1": { content: "Let's verify your business. Please enter your Legal Entity Identifier (LEI) number. Don't have it? You can upload your registration document instead." },
   "2.2": { content: "We found the following business details. Please confirm:" },
   "2.3": { content: "" }, // Restricted Industries Modal
-  "3.1": { content: "Since you are a Sole Proprietorship/DBA, please upload your Fictitious Business Name (DBA) Certificate." },
+  "3.1": { content: "Since you are a Sole Proprietorship/DBA, please upload your DBA(Doing Business As) Certificate." },
   "3.2": { content: "We extracted the following from your DBA Certificate:" },
   "3.3": { content: "As an LLC, please upload your Articles of Organization." },
   "3.4": { content: "We extracted the following from your Articles of Organization:" },
