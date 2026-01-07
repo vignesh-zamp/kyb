@@ -666,6 +666,121 @@ INSTRUCTIONS:
         print(f"Error in help chat: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.post("/extract-document-data")
+async def extract_document_data(document_type: str = Form(...), file: UploadFile = File(...)):
+    try:
+        # Save temp file
+        temp_filename = f"temp_extract_{datetime.now().strftime('%Y%m%d%H%M%S')}_{file.filename}"
+        temp_dir = "/tmp" if os.path.exists("/tmp") else "."
+        temp_path = os.path.join(temp_dir, temp_filename)
+        
+        with open(temp_path, "wb+") as file_object:
+            shutil.copyfileobj(file.file, file_object)
+            
+        # Upload to Gemini (File API)
+        sample_file = genai.upload_file(temp_path)
+        model = genai.GenerativeModel("gemini-2.0-flash-exp") # Use the smarter model for docs
+
+        prompt = ""
+        if document_type == "identity":
+             prompt = """
+              Analyze this image of an Identity Document(US SSN Card or Passport).
+              extract the following information:
+                - fullName: The full legal name visible on the document.
+              - idNumber: The SSN(XXX - XX - XXXX) or Passport Number.
+              - nationality: Country of issue(e.g., USA).
+              - dateOfBirth: Date of Birth(DD / MM / YYYY).
+              - expiryDate: Expiry Date(DD / MM / YYYY).If not present(like on SSN), return null.
+              - documentType: "ssn" or "passport".
+              - isValidId: set to true if this looks like a valid government ID.
+
+              Return the result as a raw JSON object.Do not use markdown code blocks.
+            """
+        elif document_type == "trade_license":
+            prompt = """
+              Analyze this Trade License document and extract the following information into a strict JSON format.
+              If a field is not found or unclear, return null. 
+              Do NOT wrap the JSON in markdown code blocks.
+              
+              Fields to extract:
+                - businessName(string): The name of the business(e.g., "Tech Solutions LLC")
+                    - licenseNumber(string): The license number
+                        - issuingAuthority(string): The authority that issued the license(e.g., "Dubai Economic Department")
+                            - legalType(string): The legal structure(e.g., "Limited Liability Company")
+                                - activities(array of strings): List of business activities
+                                    - expiryDate(string): The expiration date(e.g., "2025-12-31")
+            """
+        elif document_type == "freelancer_permit":
+            prompt = """
+              Analyze this Freelancer Permit document and extract the following information into a strict JSON format.
+              If a field is not found or unclear, return null. 
+              Do NOT wrap the JSON in markdown code blocks.
+              
+              Fields to extract:
+                - fullName(string): The full name of the freelancer
+                    - permitNumber(string): The permit number
+                        - issuingAuthority(string): The authority extracted from the top or title(e.g., "GDRFA", "DCCA")
+                            - activity(string): The freelance activity or designation
+                                - expiryDate(string): The expiration date
+            """
+        elif document_type == "moa":
+             prompt = """
+              Analyze this Memorandum of Association(MOA) and extract the following:
+                1. The shareholders and their ownership stakes.
+              2. Check if the document contains the word "notarized" or "attested" or has official stamps / signatures indicating it has been attested by a registrar.
+              
+              Return the output as a strict JSON object with these keys:
+                - shareholders(array of objects): Each with:
+                - name(string): Full name of the shareholder
+                    - nationality(string): Nationality of the shareholder
+                        - ownership(string): Ownership percentage(e.g. "51%", "49%")
+                            - isNotarized(boolean): true if the document contains the word "notarized"(case insensitive) or "attested" or has clear signs of official registrar attestation, else false.
+            """
+        elif document_type == "poa":
+            prompt = """
+              Analyze this Power of Attorney(POA) document and extract the following details into a strict JSON format.
+              - grantedBy(string): Name of person / entity granting the power
+                    - grantedTo(string): Name of person receiving the power
+                        - scope(string): Brief description of the scope(e.g. "Full Banking Authority")
+                            - dateIssued(string): DD / MM / YYYY
+                                - expiryDate(string): DD / MM / YYYY
+                                    - notarized(boolean): true if notarized / stamped, else false
+              
+              If a field is not found, return null or empty string.
+            """
+        elif document_type == "bylaws":
+            prompt = """
+              Analyze this corporate Bylaws document and extract the following into a strict JSON format:
+              1. officers: An array of strings containing the full names of all officers, directors, or authorized signatories mentioned.
+              2. dateAdopted: The date the bylaws were adopted or signed (DD/MM/YYYY).
+              3. businessName: The official name of the corporation mentioned in the document.
+
+              If a field is not found, return null. 
+              Do NOT wrap the JSON in markdown code blocks.
+            """
+        else:
+            return {"error": "Unknown document type"}
+
+        response = model.generate_content([sample_file, prompt])
+        print(f"Gemini Doc Extract Response: {response.text}")
+        
+        text = response.text.replace('```json', '').replace('```', '').strip()
+        # Clean up optional json starter
+        if text.startswith("json"): text = text[4:].strip()
+        
+        data = json.loads(text)
+        
+        # Cleanup temp file
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
+            
+        return data
+
+    except Exception as e:
+        print(f"Error extracting document data: {e}")
+        return {"error": str(e)}
+
+
 class KnowledgeBaseRequest(BaseModel):
     userMessage: str
     knowledgeBaseContent: str
