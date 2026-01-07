@@ -65,10 +65,9 @@ app.add_middleware(
         "http://localhost:3000", 
         "http://localhost:5173", 
         "http://localhost:8080",
-        "https://kyb-iota.vercel.app",
-        "https://kyb-tswt.vercel.app",
         "https://kyb-production-fa25.up.railway.app"
     ],
+    allow_origin_regex="https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
