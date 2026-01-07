@@ -39,6 +39,10 @@ export const extractFreelancerPermitData = async (file: File) => {
     return extractFromBackend(file, "freelancer_permit");
 };
 
+export const extractDBAData = async (file: File) => {
+    return extractFromBackend(file, "dba");
+};
+
 export const extractMOAData = async (file: File) => {
     return extractFromBackend(file, "moa");
 };

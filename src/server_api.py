@@ -723,6 +723,18 @@ async def extract_document_data(document_type: str = Form(...), file: UploadFile
                             - activity(string): The freelance activity or designation
                                 - expiryDate(string): The expiration date
             """
+        elif document_type == "dba":
+            prompt = """
+              Analyze this DBA (Doing Business As) / Fictitious Business Name Certificate and extract the following:
+                1. The owners/shareholders and their ownership details.
+                2. The business name.
+              
+              Return the output as a strict JSON object with these keys:
+                - businessName(string): The doing-business-as name.
+                - owners(array of objects): Each with:
+                    - name(string): Full name of the owner/shareholder.
+                    - ownership(number): Ownership percentage (e.g. 100, 50, 25). If not specified but implied sole owner, use 100.
+            """
         elif document_type == "moa":
              prompt = """
               Analyze this Memorandum of Association(MOA) and extract the following:

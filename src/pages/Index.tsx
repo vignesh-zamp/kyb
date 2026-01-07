@@ -44,7 +44,11 @@ import {
   MultiAddressInput,
   AutoPopulatedInfoScreen,
 } from "@/components/chat/screens";
-import { extractIdentityDocumentData, extractAllTradeLicenseData, extractFreelancerPermitData, extractMOAData, extractPOAData, extractBylawsData } from "@/lib/gemini";
+import {
+  extractIdentityDocumentData, extractAllTradeLicenseData, extractFreelancerPermitData, extractMOAData, extractBylawsData,
+  extractPOAData,
+  extractDBAData
+} from "@/lib/gemini";
 import { fetchLeiDetails } from "@/utils/gleifApi";
 import { HelpChat } from "@/components/chat/screens/HelpChat";
 
@@ -1132,8 +1136,47 @@ const Index = () => {
       let extractedData: any = {};
       switch (docType) {
         case "dba":
-          // Simulate extraction for DBA
-          extractedData = { businessName: data.tradeLicense.businessName || "Extracted DBA Name" };
+          extractedData = await extractDBAData(file);
+          // Check ownership rules from DBA doc
+          if (extractedData?.owners && Array.isArray(extractedData.owners)) {
+            // Map to shareholders
+            const mappedOwners = extractedData.owners.map((owner: any) => ({
+              name: owner.name,
+              nationality: "USA", // Default
+              ownership: owner.ownership ? `${owner.ownership}%` : "0%",
+              role: "Owner" // Default role
+            }));
+
+            // Logic: Check user 
+            let userIsAuthSignatory = false; // > 10%
+            let userIsBeneficialOwner = false; // > 50%
+            let userOwnership = 0;
+
+            const currentUser = mappedOwners.find((o: any) => o.name.toLowerCase() === data.identityDocument.fullName.toLowerCase());
+
+            if (currentUser) {
+              const ownershipVal = parseFloat(currentUser.ownership.replace("%", ""));
+              userOwnership = ownershipVal;
+              if (ownershipVal > 10) userIsAuthSignatory = true;
+              if (ownershipVal > 50) userIsBeneficialOwner = true;
+            }
+
+            // Flag if we need POA (User <= 10%)
+            const needsPOA = userOwnership <= 10;
+
+            updateData({
+              shareholders: mappedOwners,
+              isShareholderMatch: !!currentUser,
+              requiresPOA: needsPOA,
+              // Optionally store these flags if needed for UI customization elsewhere
+              // isAuthSignatory: userIsAuthSignatory,
+              // isBeneficialOwner: userIsBeneficialOwner
+            });
+
+            if (needsPOA) {
+              addAssistantMessage("It looks like you own 10% or less. Please be ready to upload a Power of Attorney (POA).");
+            }
+          }
           break;
         case "articlesOfOrganization":
         case "articlesOfIncorporation":
