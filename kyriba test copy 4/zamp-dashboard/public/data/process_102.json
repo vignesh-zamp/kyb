@@ -1,0 +1,64 @@
+{
+    "id": "102",
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Process Overview"
+        },
+        "activityLogs": {
+            "title": "Activity Logs",
+            "items": [
+                {
+                    "title": "Wio Onboarding Application started",
+                    "status": "completed",
+                    "type": "success",
+                    "time": "11:16 PM"
+                },
+                {
+                    "title": "Identity Verification in Progress",
+                    "status": "processing",
+                    "type": "info",
+                    "time": "11:16 PM",
+                    "stepId": "identity-verification"
+                },
+                {
+                    "title": "User Provided Full Name",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "Zeeshan Yasin Muhammad Yasin",
+                    "time": "11:17 PM"
+                },
+                {
+                    "title": "User Provided Email",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "a@a.com",
+                    "time": "11:17 PM"
+                },
+                {
+                    "title": "User Provided Phone",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "+9710501234567",
+                    "time": "11:17 PM"
+                },
+                {
+                    "title": "Eligibility Verified, Applicant has a Trade License",
+                    "status": "success",
+                    "type": "success",
+                    "time": "11:19 PM",
+                    "stepId": "eligibility-verification",
+                    "description": "User has a Trade License and is not in any restricted Industries"
+                }
+            ]
+        },
+        "keyDetails": {
+            "title": "Key Details",
+            "items": [
+                {
+                    "status": "processing"
+                }
+            ]
+        }
+    }
+}

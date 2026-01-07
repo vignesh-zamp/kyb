@@ -1,0 +1,64 @@
+{
+    "id": "105",
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Process Overview"
+        },
+        "activityLogs": {
+            "title": "Activity Logs",
+            "items": [
+                {
+                    "title": "Wio Onboarding Application started",
+                    "status": "completed",
+                    "type": "success",
+                    "time": "07:28 PM"
+                },
+                {
+                    "title": "Identity Verification in Progress",
+                    "status": "processing",
+                    "type": "info",
+                    "time": "07:28 PM",
+                    "stepId": "identity-verification"
+                },
+                {
+                    "title": "User Provided Full Name",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "john doe",
+                    "time": "07:28 PM"
+                },
+                {
+                    "title": "User Provided Email",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "jgjg@gjh.com",
+                    "time": "07:28 PM"
+                },
+                {
+                    "title": "User Provided Phone",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "+15550000000",
+                    "time": "07:29 PM"
+                },
+                {
+                    "title": "Eligibility Verified, Applicant has a Federal Tax ID (EIN)",
+                    "status": "success",
+                    "type": "success",
+                    "time": "07:39 PM",
+                    "stepId": "eligibility-verification",
+                    "description": "User has a Federal Tax ID (EIN) and is not in any restricted Industries"
+                }
+            ]
+        },
+        "keyDetails": {
+            "title": "Key Details",
+            "items": [
+                {
+                    "status": "processing"
+                }
+            ]
+        }
+    }
+}

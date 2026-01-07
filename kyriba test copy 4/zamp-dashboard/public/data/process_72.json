@@ -1,0 +1,356 @@
+{
+    "id": "72",
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Process Overview"
+        },
+        "activityLogs": {
+            "title": "Activity Logs",
+            "items": [
+                {
+                    "title": "Wio Onboarding Application started",
+                    "status": "completed",
+                    "type": "success",
+                    "time": "08:07 PM"
+                },
+                {
+                    "title": "Identity Verification in Progress",
+                    "status": "processing",
+                    "type": "info",
+                    "time": "08:07 PM",
+                    "stepId": "identity-verification"
+                },
+                {
+                    "title": "User Provided Full Name",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "Zeeshan Yasin Muhammad Yasin",
+                    "time": "08:07 PM"
+                },
+                {
+                    "title": "User Provided Email",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "a@g.com",
+                    "time": "08:07 PM"
+                },
+                {
+                    "title": "User Provided Phone",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "+9710501234567",
+                    "time": "08:08 PM"
+                },
+                {
+                    "title": "Eligibility Verified, Applicant has a Trade License",
+                    "status": "success",
+                    "type": "success",
+                    "time": "08:08 PM",
+                    "stepId": "eligibility-verification",
+                    "description": "User has a Trade License and is not in any restricted Industries"
+                },
+                {
+                    "title": "Document Verification Complete",
+                    "status": "success",
+                    "type": "success",
+                    "description": "Details extracted and verified from the source site",
+                    "artifacts": [
+                        {
+                            "type": "image",
+                            "label": "Unified License",
+                            "icon": "image",
+                            "imagePath": "/data/uploads/document.pdf",
+                            "id": "art-tl-1765982343441"
+                        },
+                        {
+                            "type": "table",
+                            "label": "Extracted Data",
+                            "icon": "table",
+                            "data": {
+                                "businessName": "TRAFCO DMCC",
+                                "licenseNumber": "DMCC-912545",
+                                "issuingAuthority": "Dubai Multi Commodities Centre Authority - DMCCA",
+                                "legalType": "llc",
+                                "activities": "Ship Charter",
+                                "expiryDate": "2025-12-30"
+                            },
+                            "id": "art-tl-data-1765982343441"
+                        }
+                    ],
+                    "time": "08:09 PM",
+                    "stepId": "trade-license-verification"
+                },
+                {
+                    "title": "Authority verified, all necessary documents received",
+                    "status": "success",
+                    "type": "success",
+                    "time": "08:30 PM",
+                    "stepId": "authority-verification"
+                },
+                {
+                    "title": "Common Authorization Documents",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "file",
+                            "label": "Memorandum of Association",
+                            "icon": "file",
+                            "pdfPath": "/data/uploads/Memorandum (1).pdf",
+                            "id": "art-moa-1765983588402"
+                        },
+                        {
+                            "type": "table",
+                            "label": "Shareholders (MOA)",
+                            "icon": "table",
+                            "data": [
+                                {
+                                    "name": "Badar Tariq",
+                                    "nationality": "UAE",
+                                    "ownership": "45%"
+                                },
+                                {
+                                    "name": "Ahmed Mohammed Al Rashid",
+                                    "nationality": "UAE",
+                                    "ownership": "25%"
+                                },
+                                {
+                                    "name": "Fatima Hassan Al Maktoum",
+                                    "nationality": "Pakistan",
+                                    "ownership": "15%"
+                                },
+                                {
+                                    "name": "Omar Khalid Al Suwaidi",
+                                    "nationality": "UAE",
+                                    "ownership": "10%"
+                                },
+                                {
+                                    "name": "Lina Abdulrahman Al Shamsi",
+                                    "nationality": "Egypt",
+                                    "ownership": "5%"
+                                }
+                            ],
+                            "id": "art-moa-data-1765983588402"
+                        }
+                    ],
+                    "time": "08:29 PM",
+                    "stepId": "auth-doc-moa"
+                },
+                {
+                    "title": "Power of Attorney Uploaded",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "file",
+                            "label": "Power of Attorney",
+                            "icon": "file",
+                            "pdfPath": "/data/uploads/Power of attorny (1).pdf",
+                            "id": "art-poa-1765983629794"
+                        },
+                        {
+                            "type": "table",
+                            "label": "Extracted POA Data",
+                            "icon": "table",
+                            "data": {
+                                "grantedBy": "Badar Tariq",
+                                "grantedTo": "Zeeshan Yasin Muhammad Yasin",
+                                "scope": "Full authority to act on behalf of Trafco DMCC for matters with Wio Bank PJSC, including communication, onboarding, document provision, and signing. Also covers opening and maintaining banking facilities.",
+                                "dateIssued": null,
+                                "expiryDate": null,
+                                "notarized": false
+                            },
+                            "id": "art-poa-data-1765983629794"
+                        }
+                    ],
+                    "time": "08:30 PM",
+                    "stepId": "auth-doc-poa"
+                },
+                {
+                    "title": "Bank Mandate Uploaded",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "file",
+                            "label": "Bank Mandate",
+                            "icon": "file",
+                            "pdfPath": "/data/uploads/Bank Mandate (1).pdf",
+                            "id": "art-bm-1765983641038"
+                        }
+                    ],
+                    "time": "08:30 PM",
+                    "stepId": "auth-doc-bm"
+                },
+                {
+                    "title": "Proof of Address Uploaded",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "file",
+                            "label": "Proof of Address",
+                            "icon": "file",
+                            "pdfPath": "/data/uploads/UTILITY BILL \u2014 PROOF OF ADDRESS (1).pdf",
+                            "id": "art-pa-1765983654287"
+                        }
+                    ],
+                    "time": "08:30 PM",
+                    "stepId": "auth-doc-pa"
+                },
+                {
+                    "title": "Business Verification Complete",
+                    "status": "completed",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "table",
+                            "label": "Business Verification Summary",
+                            "icon": "table",
+                            "id": "art-bus-summary-1765983716932",
+                            "data": {
+                                "Business Address": "N/A",
+                                "LEI Code": "N/A",
+                                "Website URL": "N/A",
+                                "Address Source": "N/A"
+                            }
+                        }
+                    ],
+                    "time": "08:31 PM",
+                    "stepId": "business-verification-complete"
+                }
+            ]
+        },
+        "keyDetails": {
+            "title": "Key Details",
+            "items": [
+                {
+                    "status": "processing"
+                },
+                {
+                    "Online Presence": "No",
+                    "Website URL": "",
+                    "International Operations": "Yes",
+                    "Operating Countries": "United States",
+                    "Business Address": "",
+                    "Address Source": null,
+                    "LEI Code": "N/A"
+                }
+            ]
+        },
+        "sidebarArtifacts": {
+            "title": "Artifacts",
+            "items": [
+                {
+                    "type": "image",
+                    "label": "Unified License",
+                    "icon": "image",
+                    "imagePath": "/data/uploads/document.pdf",
+                    "id": "art-tl-1765982343441"
+                },
+                {
+                    "type": "table",
+                    "label": "Extracted Data",
+                    "icon": "table",
+                    "data": {
+                        "businessName": "TRAFCO DMCC",
+                        "licenseNumber": "DMCC-912545",
+                        "issuingAuthority": "Dubai Multi Commodities Centre Authority - DMCCA",
+                        "legalType": "llc",
+                        "activities": "Ship Charter",
+                        "expiryDate": "2025-12-30"
+                    },
+                    "id": "art-tl-data-1765982343441"
+                },
+                {
+                    "type": "file",
+                    "label": "Memorandum of Association",
+                    "icon": "file",
+                    "pdfPath": "/data/uploads/Memorandum (1).pdf",
+                    "id": "art-moa-1765983588402"
+                },
+                {
+                    "type": "table",
+                    "label": "Shareholders (MOA)",
+                    "icon": "table",
+                    "data": [
+                        {
+                            "name": "Badar Tariq",
+                            "nationality": "UAE",
+                            "ownership": "45%"
+                        },
+                        {
+                            "name": "Ahmed Mohammed Al Rashid",
+                            "nationality": "UAE",
+                            "ownership": "25%"
+                        },
+                        {
+                            "name": "Fatima Hassan Al Maktoum",
+                            "nationality": "Pakistan",
+                            "ownership": "15%"
+                        },
+                        {
+                            "name": "Omar Khalid Al Suwaidi",
+                            "nationality": "UAE",
+                            "ownership": "10%"
+                        },
+                        {
+                            "name": "Lina Abdulrahman Al Shamsi",
+                            "nationality": "Egypt",
+                            "ownership": "5%"
+                        }
+                    ],
+                    "id": "art-moa-data-1765983588402"
+                },
+                {
+                    "type": "file",
+                    "label": "Power of Attorney",
+                    "icon": "file",
+                    "pdfPath": "/data/uploads/Power of attorny (1).pdf",
+                    "id": "art-poa-1765983629794"
+                },
+                {
+                    "type": "table",
+                    "label": "Extracted POA Data",
+                    "icon": "table",
+                    "data": {
+                        "grantedBy": "Badar Tariq",
+                        "grantedTo": "Zeeshan Yasin Muhammad Yasin",
+                        "scope": "Full authority to act on behalf of Trafco DMCC for matters with Wio Bank PJSC, including communication, onboarding, document provision, and signing. Also covers opening and maintaining banking facilities.",
+                        "dateIssued": null,
+                        "expiryDate": null,
+                        "notarized": false
+                    },
+                    "id": "art-poa-data-1765983629794"
+                },
+                {
+                    "type": "file",
+                    "label": "Bank Mandate",
+                    "icon": "file",
+                    "pdfPath": "/data/uploads/Bank Mandate (1).pdf",
+                    "id": "art-bm-1765983641038"
+                },
+                {
+                    "type": "file",
+                    "label": "Proof of Address",
+                    "icon": "file",
+                    "pdfPath": "/data/uploads/UTILITY BILL \u2014 PROOF OF ADDRESS (1).pdf",
+                    "id": "art-pa-1765983654287"
+                },
+                {
+                    "type": "table",
+                    "label": "Business Verification Summary",
+                    "icon": "table",
+                    "id": "art-bus-summary-1765983716932",
+                    "data": {
+                        "Business Address": "N/A",
+                        "LEI Code": "N/A",
+                        "Website URL": "N/A",
+                        "Address Source": "N/A"
+                    }
+                }
+            ]
+        }
+    }
+}

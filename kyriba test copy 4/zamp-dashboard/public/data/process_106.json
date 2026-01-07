@@ -1,0 +1,71 @@
+{
+    "id": "106",
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Process Overview"
+        },
+        "activityLogs": {
+            "title": "Activity Logs",
+            "items": [
+                {
+                    "title": "Wio Onboarding Application started",
+                    "status": "completed",
+                    "type": "success",
+                    "time": "11:11 AM"
+                },
+                {
+                    "title": "Identity Verification in Progress",
+                    "status": "processing",
+                    "type": "info",
+                    "time": "11:11 AM",
+                    "stepId": "identity-verification"
+                },
+                {
+                    "title": "User Provided Full Name",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "john doe",
+                    "time": "11:11 AM"
+                },
+                {
+                    "title": "User Provided Email",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "a@z.com",
+                    "time": "11:12 AM"
+                },
+                {
+                    "title": "User Provided Phone",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "+15550000000",
+                    "time": "11:12 AM"
+                },
+                {
+                    "title": "Eligibility Verified, Applicant has a Legal Entity Identifier (LEI)",
+                    "status": "success",
+                    "type": "success",
+                    "time": "11:12 AM",
+                    "stepId": "eligibility-verification",
+                    "description": "User has a Legal Entity Identifier (LEI) and is not in any restricted Industries"
+                },
+                {
+                    "title": "License Verification in Progress",
+                    "status": "processing",
+                    "type": "info",
+                    "time": "11:13 AM",
+                    "stepId": "trade-license-verification"
+                }
+            ]
+        },
+        "keyDetails": {
+            "title": "Key Details",
+            "items": [
+                {
+                    "status": "processing"
+                }
+            ]
+        }
+    }
+}

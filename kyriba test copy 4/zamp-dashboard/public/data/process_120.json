@@ -1,0 +1,279 @@
+{
+    "id": "120",
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Process Overview"
+        },
+        "activityLogs": {
+            "title": "Activity Logs",
+            "items": [
+                {
+                    "title": "Business Onboarding Application started",
+                    "status": "completed",
+                    "type": "success",
+                    "time": "06:02 PM"
+                },
+                {
+                    "title": "Identity Verification in Progress",
+                    "status": "processing",
+                    "type": "info",
+                    "time": "06:02 PM",
+                    "stepId": "identity-verification"
+                },
+                {
+                    "title": "User Provided Email",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "a@a.com",
+                    "time": "06:02 PM"
+                },
+                {
+                    "title": "User Provided Phone",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "+15550000000",
+                    "time": "06:03 PM"
+                },
+                {
+                    "title": "User Provided Full Name",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "John Doe",
+                    "time": "06:03 PM"
+                },
+                {
+                    "title": "Eligibility Verified for corp",
+                    "status": "success",
+                    "type": "success",
+                    "time": "06:03 PM",
+                    "stepId": "eligibility-verification",
+                    "description": "User verified restricted industries for corp"
+                },
+                {
+                    "title": "LEI Verification in Progress",
+                    "status": "processing",
+                    "type": "info",
+                    "time": "06:03 PM",
+                    "stepId": "lei-verification"
+                },
+                {
+                    "title": "LEI Verified Successfully",
+                    "status": "success",
+                    "type": "success",
+                    "time": "06:03 PM",
+                    "stepId": "trade-license-verification"
+                },
+                {
+                    "title": "articlesOfIncorporation Document Uploaded",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "image",
+                            "label": "articlesOfIncorporation Document",
+                            "icon": "image",
+                            "imagePath": null,
+                            "id": "art-articlesOfIncorporation-1767357237335"
+                        },
+                        {
+                            "type": "table",
+                            "label": "Extracted articlesOfIncorporation Data",
+                            "icon": "table",
+                            "data": {
+                                "businessName": "American Engineering Corporation(OKINAWA)",
+                                "dateFormed": "01/01/2023"
+                            },
+                            "id": "art-articlesOfIncorporation-data-1767357237335"
+                        }
+                    ],
+                    "time": "06:03 PM",
+                    "stepId": "articlesOfIncorporation-upload"
+                },
+                {
+                    "title": "bylaws Document Uploaded",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "image",
+                            "label": "bylaws Document",
+                            "icon": "image",
+                            "imagePath": null,
+                            "id": "art-bylaws-1767357279239"
+                        },
+                        {
+                            "type": "table",
+                            "label": "Extracted bylaws Data",
+                            "icon": "table",
+                            "data": {
+                                "officers": [
+                                    "James R. Thornton",
+                                    "Miyako Tanaka",
+                                    "David L. Patterson",
+                                    "Elena M. Vasquez",
+                                    "Robert K. Fitzgerald",
+                                    "William H. Chen",
+                                    "Sarah J. Morrison"
+                                ],
+                                "dateAdopted": "15/01/2024",
+                                "businessName": "AMERICAN ENGINEERING CORPORATION (OKINAWA)"
+                            },
+                            "id": "art-bylaws-data-1767357279239"
+                        }
+                    ],
+                    "time": "06:04 PM",
+                    "stepId": "bylaws-upload"
+                },
+                {
+                    "title": "poa Document Uploaded",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "image",
+                            "label": "poa Document",
+                            "icon": "image",
+                            "imagePath": null,
+                            "id": "art-poa-1767357295541"
+                        },
+                        {
+                            "type": "table",
+                            "label": "Extracted poa Data",
+                            "icon": "table",
+                            "data": {
+                                "grantedBy": "AMERICAN ENGINEERING CORPORATION (OKINAWA)",
+                                "grantedTo": "JOHN DOE",
+                                "scope": "Full power and authority to act on behalf of the Corporation in all matters relating to its business operations, including but not limited to executing contracts, managing bank accounts, representing the Corporation before government agencies, negotiating claims, dealing with property, hiring/terminating employees, filing tax returns and regulatory filings, and performing any other acts necessary to conduct the Corporation's business in Japan.",
+                                "dateIssued": "02 / 01 / 2025",
+                                "expiryDate": "01 / 01 / 2027",
+                                "notarized": true
+                            },
+                            "id": "art-poa-data-1767357295542"
+                        }
+                    ],
+                    "time": "06:04 PM",
+                    "stepId": "poa-upload"
+                },
+                {
+                    "title": "proofOfAddress Document Uploaded",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "image",
+                            "label": "proofOfAddress Document",
+                            "icon": "image",
+                            "imagePath": null,
+                            "id": "art-proofOfAddress-1767357317600"
+                        },
+                        {
+                            "type": "table",
+                            "label": "Extracted proofOfAddress Data",
+                            "icon": "table",
+                            "data": {
+                                "address": "123 Main St, Anytown, USA"
+                            },
+                            "id": "art-proofOfAddress-data-1767357317600"
+                        }
+                    ],
+                    "time": "06:05 PM",
+                    "stepId": "proofOfAddress-upload"
+                }
+            ]
+        },
+        "keyDetails": {
+            "title": "Key Details",
+            "items": [
+                {
+                    "status": "processing"
+                }
+            ]
+        },
+        "sidebarArtifacts": {
+            "title": "Artifacts",
+            "items": [
+                {
+                    "type": "image",
+                    "label": "articlesOfIncorporation Document",
+                    "icon": "image",
+                    "imagePath": null,
+                    "id": "art-articlesOfIncorporation-1767357237335"
+                },
+                {
+                    "type": "table",
+                    "label": "Extracted articlesOfIncorporation Data",
+                    "icon": "table",
+                    "data": {
+                        "businessName": "American Engineering Corporation(OKINAWA)",
+                        "dateFormed": "01/01/2023"
+                    },
+                    "id": "art-articlesOfIncorporation-data-1767357237335"
+                },
+                {
+                    "type": "image",
+                    "label": "bylaws Document",
+                    "icon": "image",
+                    "imagePath": null,
+                    "id": "art-bylaws-1767357279239"
+                },
+                {
+                    "type": "table",
+                    "label": "Extracted bylaws Data",
+                    "icon": "table",
+                    "data": {
+                        "officers": [
+                            "James R. Thornton",
+                            "Miyako Tanaka",
+                            "David L. Patterson",
+                            "Elena M. Vasquez",
+                            "Robert K. Fitzgerald",
+                            "William H. Chen",
+                            "Sarah J. Morrison"
+                        ],
+                        "dateAdopted": "15/01/2024",
+                        "businessName": "AMERICAN ENGINEERING CORPORATION (OKINAWA)"
+                    },
+                    "id": "art-bylaws-data-1767357279239"
+                },
+                {
+                    "type": "image",
+                    "label": "poa Document",
+                    "icon": "image",
+                    "imagePath": null,
+                    "id": "art-poa-1767357295541"
+                },
+                {
+                    "type": "table",
+                    "label": "Extracted poa Data",
+                    "icon": "table",
+                    "data": {
+                        "grantedBy": "AMERICAN ENGINEERING CORPORATION (OKINAWA)",
+                        "grantedTo": "JOHN DOE",
+                        "scope": "Full power and authority to act on behalf of the Corporation in all matters relating to its business operations, including but not limited to executing contracts, managing bank accounts, representing the Corporation before government agencies, negotiating claims, dealing with property, hiring/terminating employees, filing tax returns and regulatory filings, and performing any other acts necessary to conduct the Corporation's business in Japan.",
+                        "dateIssued": "02 / 01 / 2025",
+                        "expiryDate": "01 / 01 / 2027",
+                        "notarized": true
+                    },
+                    "id": "art-poa-data-1767357295542"
+                },
+                {
+                    "type": "image",
+                    "label": "proofOfAddress Document",
+                    "icon": "image",
+                    "imagePath": null,
+                    "id": "art-proofOfAddress-1767357317600"
+                },
+                {
+                    "type": "table",
+                    "label": "Extracted proofOfAddress Data",
+                    "icon": "table",
+                    "data": {
+                        "address": "123 Main St, Anytown, USA"
+                    },
+                    "id": "art-proofOfAddress-data-1767357317600"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,228 @@
+{
+    "id": "118",
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Process Overview"
+        },
+        "activityLogs": {
+            "title": "Activity Logs",
+            "items": [
+                {
+                    "title": "Business Onboarding Application started",
+                    "status": "completed",
+                    "type": "success",
+                    "time": "05:08 PM"
+                },
+                {
+                    "title": "Identity Verification in Progress",
+                    "status": "processing",
+                    "type": "info",
+                    "time": "05:08 PM",
+                    "stepId": "identity-verification"
+                },
+                {
+                    "title": "User Provided Email",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "a@a.com",
+                    "time": "05:08 PM"
+                },
+                {
+                    "title": "User Provided Phone",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "+15550000000",
+                    "time": "05:08 PM"
+                },
+                {
+                    "title": "User Provided Full Name",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "John Doe",
+                    "time": "05:08 PM"
+                },
+                {
+                    "title": "Eligibility Verified for corp",
+                    "status": "success",
+                    "type": "success",
+                    "time": "05:09 PM",
+                    "stepId": "eligibility-verification",
+                    "description": "User verified restricted industries for corp"
+                },
+                {
+                    "title": "LEI Verification in Progress",
+                    "status": "processing",
+                    "type": "info",
+                    "time": "05:09 PM",
+                    "stepId": "lei-verification"
+                },
+                {
+                    "title": "LEI Verified Successfully",
+                    "status": "success",
+                    "type": "success",
+                    "time": "05:09 PM",
+                    "stepId": "trade-license-verification"
+                },
+                {
+                    "title": "articlesOfIncorporation Document Uploaded",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "image",
+                            "label": "articlesOfIncorporation Document",
+                            "icon": "image",
+                            "imagePath": null,
+                            "id": "art-articlesOfIncorporation-1767353964969"
+                        },
+                        {
+                            "type": "table",
+                            "label": "Extracted articlesOfIncorporation Data",
+                            "icon": "table",
+                            "data": {
+                                "businessName": "American Engineering Corporation(OKINAWA)",
+                                "dateFormed": "01/01/2023"
+                            },
+                            "id": "art-articlesOfIncorporation-data-1767353964969"
+                        }
+                    ],
+                    "time": "05:09 PM",
+                    "stepId": "articlesOfIncorporation-upload"
+                },
+                {
+                    "title": "bylaws Document Uploaded",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "image",
+                            "label": "bylaws Document",
+                            "icon": "image",
+                            "imagePath": null,
+                            "id": "art-bylaws-1767353991755"
+                        },
+                        {
+                            "type": "table",
+                            "label": "Extracted bylaws Data",
+                            "icon": "table",
+                            "data": {
+                                "officers": [
+                                    "James R. Thornton",
+                                    "Miyako Tanaka",
+                                    "David L. Patterson",
+                                    "Elena M. Vasquez",
+                                    "Robert K. Fitzgerald",
+                                    "William H. Chen",
+                                    "Sarah J. Morrison"
+                                ],
+                                "dateAdopted": "15/01/2024",
+                                "businessName": "AMERICAN ENGINEERING CORPORATION (OKINAWA)"
+                            },
+                            "id": "art-bylaws-data-1767353991755"
+                        }
+                    ],
+                    "time": "05:09 PM",
+                    "stepId": "bylaws-upload"
+                },
+                {
+                    "title": "proofOfAddress Document Uploaded",
+                    "status": "success",
+                    "type": "success",
+                    "artifacts": [
+                        {
+                            "type": "image",
+                            "label": "proofOfAddress Document",
+                            "icon": "image",
+                            "imagePath": null,
+                            "id": "art-proofOfAddress-1767354007132"
+                        },
+                        {
+                            "type": "table",
+                            "label": "Extracted proofOfAddress Data",
+                            "icon": "table",
+                            "data": {
+                                "address": "123 Main St, Anytown, USA"
+                            },
+                            "id": "art-proofOfAddress-data-1767354007132"
+                        }
+                    ],
+                    "time": "05:10 PM",
+                    "stepId": "proofOfAddress-upload"
+                }
+            ]
+        },
+        "keyDetails": {
+            "title": "Key Details",
+            "items": [
+                {
+                    "status": "processing"
+                }
+            ]
+        },
+        "sidebarArtifacts": {
+            "title": "Artifacts",
+            "items": [
+                {
+                    "type": "image",
+                    "label": "articlesOfIncorporation Document",
+                    "icon": "image",
+                    "imagePath": null,
+                    "id": "art-articlesOfIncorporation-1767353964969"
+                },
+                {
+                    "type": "table",
+                    "label": "Extracted articlesOfIncorporation Data",
+                    "icon": "table",
+                    "data": {
+                        "businessName": "American Engineering Corporation(OKINAWA)",
+                        "dateFormed": "01/01/2023"
+                    },
+                    "id": "art-articlesOfIncorporation-data-1767353964969"
+                },
+                {
+                    "type": "image",
+                    "label": "bylaws Document",
+                    "icon": "image",
+                    "imagePath": null,
+                    "id": "art-bylaws-1767353991755"
+                },
+                {
+                    "type": "table",
+                    "label": "Extracted bylaws Data",
+                    "icon": "table",
+                    "data": {
+                        "officers": [
+                            "James R. Thornton",
+                            "Miyako Tanaka",
+                            "David L. Patterson",
+                            "Elena M. Vasquez",
+                            "Robert K. Fitzgerald",
+                            "William H. Chen",
+                            "Sarah J. Morrison"
+                        ],
+                        "dateAdopted": "15/01/2024",
+                        "businessName": "AMERICAN ENGINEERING CORPORATION (OKINAWA)"
+                    },
+                    "id": "art-bylaws-data-1767353991755"
+                },
+                {
+                    "type": "image",
+                    "label": "proofOfAddress Document",
+                    "icon": "image",
+                    "imagePath": null,
+                    "id": "art-proofOfAddress-1767354007132"
+                },
+                {
+                    "type": "table",
+                    "label": "Extracted proofOfAddress Data",
+                    "icon": "table",
+                    "data": {
+                        "address": "123 Main St, Anytown, USA"
+                    },
+                    "id": "art-proofOfAddress-data-1767354007132"
+                }
+            ]
+        }
+    }
+}

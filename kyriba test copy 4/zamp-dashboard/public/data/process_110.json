@@ -1,0 +1,71 @@
+{
+    "id": "110",
+    "sections": {
+        "overview": {
+            "title": "Overview",
+            "content": "Process Overview"
+        },
+        "activityLogs": {
+            "title": "Activity Logs",
+            "items": [
+                {
+                    "title": "Wio Onboarding Application started",
+                    "status": "completed",
+                    "type": "success",
+                    "time": "04:47 PM"
+                },
+                {
+                    "title": "Identity Verification in Progress",
+                    "status": "processing",
+                    "type": "info",
+                    "time": "04:47 PM",
+                    "stepId": "identity-verification"
+                },
+                {
+                    "title": "User Provided Full Name",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "john doe",
+                    "time": "04:47 PM"
+                },
+                {
+                    "title": "User Provided Email",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "a@a.cin",
+                    "time": "04:47 PM"
+                },
+                {
+                    "title": "User Provided Phone",
+                    "status": "processing",
+                    "type": "info",
+                    "description": "+15550000000",
+                    "time": "04:47 PM"
+                },
+                {
+                    "title": "Eligibility Verified, Applicant has a Legal Entity Identifier (LEI)",
+                    "status": "success",
+                    "type": "success",
+                    "time": "04:48 PM",
+                    "stepId": "eligibility-verification",
+                    "description": "User has a Legal Entity Identifier (LEI) and is not in any restricted Industries"
+                },
+                {
+                    "title": "LEI Verified Successfully",
+                    "status": "success",
+                    "type": "success",
+                    "time": "04:48 PM",
+                    "stepId": "trade-license-verification"
+                }
+            ]
+        },
+        "keyDetails": {
+            "title": "Key Details",
+            "items": [
+                {
+                    "status": "processing"
+                }
+            ]
+        }
+    }
+}
