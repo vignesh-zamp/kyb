@@ -7,7 +7,21 @@ import { OptionCard } from "@/components/chat/OptionCard";
 import { ModeToggle } from "@/components/mode-toggle";
 import { FileUpload } from "@/components/chat/FileUpload";
 import { BackLink } from "@/components/chat/BackLink";
-import { Building2, Briefcase, ArrowRight } from "lucide-react";
+import { Building2, Briefcase, ArrowRight, User, ShieldCheck, FileText, Globe, CheckCircle2 } from "lucide-react";
+
+// ... existing imports ...
+
+const STEPS: Step[] = [
+  { id: 1, label: "Identity", description: "Verification" },
+  { id: 2, label: "Eligibility", description: "Business type" },
+  { id: 3, label: "Documents", description: "Upload & verify" },
+  { id: 4, label: "Authorization", description: "Documents" },
+  { id: 5, label: "Business", description: "Operations" },
+  { id: 6, label: "Financial", description: "Profile" },
+  { id: 7, label: "Review", description: "Submit" },
+];
+
+const API_URL = import.meta.env.VITE_API_URL;
 import { Step } from "@/components/chat/ProgressStepper";
 import {
   useOnboardingFlow,
