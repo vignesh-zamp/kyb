@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { FileText, Video, Database, ChevronUp, ChevronDown, Check, Maximize2, Loader2, Star, MonitorPlay, Image as ImageIcon, Table as TableIcon, Send } from 'lucide-react';
 
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 const CollapsibleReasoning = ({ reasons }) => {
     const [isOpen, setIsOpen] = useState(false);
