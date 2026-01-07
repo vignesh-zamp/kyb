@@ -152,46 +152,36 @@ export function SuccessScreen({ email, referenceNumber, contextData, stepInfo, z
           </div>
 
           {/* Status Tracker */}
-          <div className="flex items-center justify-between py-6">
+          <div className="relative flex items-center justify-center gap-0 py-6 max-w-2xl mx-auto">
+            {/* Continuous Line Background */}
+            <div className="absolute top-7 left-10 right-10 h-0.5 bg-border -z-0" />
+
+            {/* Progress Line (Green) */}
+            <div
+              className="absolute top-7 left-10 h-0.5 bg-green-500 -z-0 transition-all duration-500"
+              style={{
+                width: `calc(${(statusSteps.filter(s => s.completed).length - 1) / (statusSteps.length - 1) * 100}% - 5rem)`
+              }}
+            />
+
             {statusSteps.map((step, index) => (
-              <div key={step.label} className="flex flex-col items-center flex-1">
-                <div className="relative flex items-center w-full">
-                  {/* Connecting line - left side */}
-                  {index > 0 && (
-                    <div
-                      className={`absolute right-1/2 h-0.5 w-full ${statusSteps[index - 1].completed ? 'bg-primary' : 'bg-border'
-                        }`}
-                    />
-                  )}
-
-                  {/* Circle */}
-                  <div className="relative z-10 mx-auto">
-                    <div
-                      className={`w-14 h-14 rounded-full flex items-center justify-center border-2 transition-all ${step.completed
-                        ? 'bg-green-500 border-green-500'
-                        : 'bg-muted border-border'
-                        }`}
-                    >
-                      {step.completed ? (
-                        <Check className="h-6 w-6 text-white" />
-                      ) : (
-                        <div className="w-3 h-3 rounded-full border-2 border-muted-foreground" />
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Connecting line - right side */}
-                  {index < statusSteps.length - 1 && (
-                    <div
-                      className={`absolute left-1/2 h-0.5 w-full ${step.completed ? 'bg-primary' : 'bg-border'
-                        }`}
-                    />
+              <div key={step.label} className="relative flex flex-col items-center z-10 w-40">
+                <div
+                  className={`w-14 h-14 rounded-full flex items-center justify-center border-4 transition-all bg-card ${step.completed
+                    ? 'border-green-500 text-green-500' // Green ring for completed
+                    : 'border-muted bg-muted text-muted-foreground'
+                    }`}
+                >
+                  {step.completed ? (
+                    <Check className="h-6 w-6 font-bold" strokeWidth={3} />
+                  ) : (
+                    <div className="w-3 h-3 rounded-full bg-muted-foreground/30" />
                   )}
                 </div>
 
                 {/* Label */}
                 <p
-                  className={`text-sm mt-3 text-center font-medium ${step.completed ? 'text-green-500' : 'text-muted-foreground'
+                  className={`text-xs mt-3 text-center font-semibold px-2 ${step.completed ? 'text-green-600' : 'text-muted-foreground'
                     }`}
                 >
                   {step.label}
