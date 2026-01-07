@@ -193,17 +193,7 @@ const AddressInputWrapper = ({
   );
 };
 
-const STEPS = [
-  { id: 1, title: "Identity", icon: User },
-  { id: 2, title: "Eligibility", icon: ShieldCheck },
-  { id: 3, title: "Entity Docs", icon: FileText },
-  { id: 4, title: "Authorization", icon: ShieldCheck },
-  { id: 5, title: "Operations", icon: Globe },
-  { id: 6, title: "Financials", icon: Briefcase },
-  { id: 7, title: "Review", icon: CheckCircle2 }
-];
 
-const API_URL = import.meta.env.VITE_API_URL;
 
 const WELCOME_MESSAGE = "Welcome to our Intelligent Onboarding platform powered by Pace.\n\nI'm here to help you open your business bank account so you can get your business banking up and running in no time!";
 
